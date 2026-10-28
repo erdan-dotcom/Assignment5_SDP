@@ -1,4 +1,7 @@
 package strategy.model;
 
-public class RouteDecision {
-}
+public record RouteDecision(
+        Route selectedRoute,
+        String strategyName,
+        String explanation
+) {}

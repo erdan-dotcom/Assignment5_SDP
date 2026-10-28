@@ -1,4 +1,9 @@
 package strategy.model;
 
-public class DeliveryPriority {
+public enum DeliveryPriority {
+    URGENT,
+    ECONOMY,
+    ECO,
+    STANDARD,
+    PREMIUM
 }

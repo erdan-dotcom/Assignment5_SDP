@@ -1,4 +1,14 @@
 package strategy.model;
 
-public class Route {
-}
+public record Route(
+        String id,
+        Location origin,
+        Location destination,
+        double distanceKm,
+        int estimatedMinutes,
+        double baseCost,
+        double carbonEmission,
+        int trafficPenaltyMinutes,
+        boolean isAvailable,
+        int safetyScore
+) {}

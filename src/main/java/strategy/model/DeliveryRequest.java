@@ -1,4 +1,8 @@
 package strategy.model;
 
-public class DeliveryRequest {
-}
+public record DeliveryRequest(
+        DeliveryPriority priority,
+        double maxBudget,
+        int maxDeliveryMinutes,
+        boolean ecoPreferred
+) {}
